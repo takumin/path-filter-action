@@ -1,0 +1,31 @@
+---
+# aqua - Declarative CLI Version Manager
+# https://aquaproj.github.io/
+registries:
+- type: standard
+  ref: v4.284.1 # renovate: depName=aquaproj/aqua-registry
+- name: local
+  type: local
+  path: .aqua-registry.yaml
+packages:
+- name: golang/go@go1.23.4
+- name: honnef.co/go/tools/cmd/staticcheck@2024.1.1
+  registry: local
+  tags: [go]
+- name: securego/gosec@v2.21.4
+- name: reviewdog/reviewdog@v0.20.3
+- name: mvdan/sh@v3.10.0
+- name: koalaman/shellcheck@v0.10.0
+- name: rhysd/actionlint@v1.7.4
+- name: rust-lang/mdBook@v0.4.43
+- name: takumin/gjson@v0.0.3
+- name: aquasecurity/trivy@v0.58.1
+- name: takumin/gyaml@v0.0.2
+- name: editorconfig-checker/editorconfig-checker@v3.0.3
+- name: oven-sh/bun@bun-v1.1.42
+- name: k1LoW/octocov@v0.62.4
+- name: google/yamlfmt@v0.14.0
+- name: suzuki-shunsuke/ghalint@v1.2.0
+- name: suzuki-shunsuke/pinact@v1.0.0
+- name: go-task/task@v3.40.1
+- name: evilmartians/lefthook@v1.10.1
