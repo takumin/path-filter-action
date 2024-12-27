@@ -9,7 +9,7 @@ import (
 	"github.com/urfave/cli/v2"
 
 	"github.com/takumin/path-filter-action/internal/command/completion"
-	"github.com/takumin/path-filter-action/internal/command/subcommand"
+	"github.com/takumin/path-filter-action/internal/command/ghpr"
 	"github.com/takumin/path-filter-action/internal/config"
 	"github.com/takumin/path-filter-action/internal/metadata"
 	"github.com/takumin/path-filter-action/internal/version"
@@ -73,7 +73,7 @@ func Main(stdout io.Writer, stderr io.Writer, stdin io.Reader, args []string) in
 
 	cmds := []*cli.Command{
 		completion.NewCommands(cfg, flags),
-		subcommand.NewCommands(cfg, flags),
+		ghpr.NewCommands(cfg, flags),
 	}
 
 	app := &cli.App{

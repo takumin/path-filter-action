@@ -19,5 +19,5 @@ func (o LogFormat) Apply(c *Config) {
 type Variable string
 
 func (o Variable) Apply(c *Config) {
-	c.Variable = string(o)
+	c.GitHubToken = string(o)
 }
