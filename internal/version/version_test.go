@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/takumin/boilerplate-golang-cli/internal/version"
+	"github.com/takumin/path-filter-action/internal/version"
 )
 
 func TestVersion(t *testing.T) {

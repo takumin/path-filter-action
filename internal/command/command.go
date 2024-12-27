@@ -8,11 +8,11 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/takumin/boilerplate-golang-cli/internal/command/completion"
-	"github.com/takumin/boilerplate-golang-cli/internal/command/subcommand"
-	"github.com/takumin/boilerplate-golang-cli/internal/config"
-	"github.com/takumin/boilerplate-golang-cli/internal/metadata"
-	"github.com/takumin/boilerplate-golang-cli/internal/version"
+	"github.com/takumin/path-filter-action/internal/command/completion"
+	"github.com/takumin/path-filter-action/internal/command/subcommand"
+	"github.com/takumin/path-filter-action/internal/config"
+	"github.com/takumin/path-filter-action/internal/metadata"
+	"github.com/takumin/path-filter-action/internal/version"
 )
 
 const (

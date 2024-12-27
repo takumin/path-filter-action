@@ -1,4 +1,4 @@
-module github.com/takumin/boilerplate-golang-cli
+module github.com/takumin/path-filter-action
 
 go 1.23.4
 

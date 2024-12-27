@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/takumin/boilerplate-golang-cli/internal/command"
+	"github.com/takumin/path-filter-action/internal/command"
 )
 
 func TestMainCommand(t *testing.T) {
