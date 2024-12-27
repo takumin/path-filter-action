@@ -1,4 +1,4 @@
-package subcommand
+package changes
 
 import (
 	"github.com/urfave/cli/v2"
@@ -18,9 +18,9 @@ func NewCommands(cfg *config.Config, flags []cli.Flag) *cli.Command {
 		},
 	}...)
 	return &cli.Command{
-		Name:    "subcommand",
-		Aliases: []string{"sub"},
-		Usage:   "subcommand",
+		Name:    "changes",
+		Aliases: []string{"c"},
+		Usage:   "change files",
 		Flags:   flags,
 		Action:  action(cfg),
 	}

@@ -8,8 +8,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	"github.com/takumin/boilerplate-golang-cli/internal/command/changes"
 	"github.com/takumin/boilerplate-golang-cli/internal/command/completion"
-	"github.com/takumin/boilerplate-golang-cli/internal/command/subcommand"
 	"github.com/takumin/boilerplate-golang-cli/internal/config"
 	"github.com/takumin/boilerplate-golang-cli/internal/metadata"
 	"github.com/takumin/boilerplate-golang-cli/internal/version"
@@ -73,7 +73,7 @@ func Main(stdout io.Writer, stderr io.Writer, stdin io.Reader, args []string) in
 
 	cmds := []*cli.Command{
 		completion.NewCommands(cfg, flags),
-		subcommand.NewCommands(cfg, flags),
+		changes.NewCommands(cfg, flags),
 	}
 
 	app := &cli.App{
