@@ -1,9 +1,9 @@
 package config
 
 type Config struct {
-	LogLevel  string
-	LogFormat string
-	Variable  string
+	LogLevel    string
+	LogFormat   string
+	GitHubToken string
 }
 
 func NewConfig(opts ...Option) *Config {

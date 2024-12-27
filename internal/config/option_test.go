@@ -25,8 +25,8 @@ func TestLogFormat(t *testing.T) {
 	}
 }
 
-func TestVariable(t *testing.T) {
-	want := &config.Config{Variable: "TEST"}
+func TestGitHubToken(t *testing.T) {
+	want := &config.Config{GitHubToken: "TEST"}
 	got := &config.Config{}
 	config.Variable("TEST").Apply(got)
 	if !reflect.DeepEqual(want, got) {
