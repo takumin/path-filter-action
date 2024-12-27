@@ -28,7 +28,7 @@ func TestLogFormat(t *testing.T) {
 func TestGitHubToken(t *testing.T) {
 	want := &config.Config{GitHubToken: "TEST"}
 	got := &config.Config{}
-	config.Variable("TEST").Apply(got)
+	config.GitHubToken("TEST").Apply(got)
 	if !reflect.DeepEqual(want, got) {
 		t.Error("expected config struct to be equal, but got not equal")
 	}
