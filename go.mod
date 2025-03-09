@@ -1,6 +1,6 @@
 module github.com/takumin/path-filter-action
 
-go 1.23.6
+go 1.24.1
 
 require github.com/urfave/cli/v2 v2.27.6
 
